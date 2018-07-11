@@ -1,0 +1,63 @@
+/* Ion.Tabs
+// css version 1.0.0
+// by Denis Ineshin | ionden.com
+// ===================================================================================================================*/
+
+/* =====================================================================================================================
+// Ion.Tabs: Base */
+
+.ionTabs {
+    position: relative;
+	color:#3a247d;
+	font-family: Microsoft JhengHei,Tahoma, Geneva, sans-serif;
+}
+    .ionTabs__head {
+        position: relative; display: block;
+        list-style-type: none;
+        margin: 0; padding: 0;
+        z-index: 1;		
+    }
+    .ionTabs__head:before, .ionTabs__head:after {content: ""; display: table;}
+    .ionTabs__head:after {clear: both;}
+    .ionTabs__head {zoom: 1;}
+
+        .ionTabs__tab {
+            position: relative;
+            display: block; float: left;
+            list-style-type: none;
+            background: none;
+            margin: 0; padding: 0;
+            cursor: pointer;
+			
+        }
+            .ionTabs__tab.ionTabs__tab_state_active {
+                cursor: default;
+            }
+
+    .ionTabs__body {
+        position: relative;
+        z-index: 2;
+    }
+
+    .ionTabs__item {
+        position: relative;
+        display: none;
+		font-size:1.4em;
+		padding-top:15px;
+		min-height:300px;
+		/*line-height:2em;*/
+    }
+	
+    .ionTabs__item  h3{
+		font-size:1.4em;
+		font-weight:bold;
+		color:#aeaeae;
+    }	
+	
+    .ionTabs__item.ionTabs__item_state_active {
+        display: block;
+    }
+
+    .ionTabs__preloader {
+        position: relative;
+    }
